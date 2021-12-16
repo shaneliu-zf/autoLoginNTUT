@@ -1,0 +1,32 @@
+{
+  "description": "",
+  "homepage_url": "https://shaneliu.studio-alvitr.com",
+  "manifest_version": 2,
+  "name": "北科校網登入器",
+  "options_ui": {
+      "page": "options/options.html",
+      "browser_style": true
+  },
+  "browser_action": {
+      "default_title": "北科校網登入器",
+      "default_popup": "popup/popup.html"
+  },
+  "permissions": ["storage"],
+  "version": "1.1",
+  "browser_specific_settings": {
+      "gecko": {
+          "id": "autoLoginNTUT@shaneliu.studio-alvitr.com",
+          "strict_min_version": "0.01"
+      }
+  },
+  "content_scripts": [
+      {
+          "matches": ["https://captiveportal-login.ntut.edu.tw/upload/custom/NTUT-WebPortal/ntut_login_outside.html*"],
+          "js": ["autoLoginNTUT.js"]
+      },
+      {
+          "matches": ["https://captiveportal-login.ntut.edu.tw/cgi-bin/login?cmd=logout"],
+          "js": ["logout.js"]
+      }
+  ]
+}
