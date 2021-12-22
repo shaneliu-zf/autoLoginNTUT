@@ -1,11 +1,10 @@
 # 北科校網登入器1.0
 
-## ## 安裝教學
+## 安裝教學
 
 > 目前僅供firefox使用
 
-下載之後，在firefox網址列輸入about:debugging，選「這個firefox」> 「載入暫用附加元件」，選擇程式包裡的manifest.json即導入成功。（關掉firefox就會自動被刪除，所以每次重開都需要重新安裝）
-
+https://addons.mozilla.org/firefox/downloads/file/3884397/addon-1.1-fx.xpi
 ## 使用教學
 
 反正就設定好帳密，然後之後跳到登入介面之後就會自動登入了（登入後會開啟北科官網，那個目前還是要自己關掉）
